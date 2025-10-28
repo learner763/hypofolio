@@ -218,8 +218,11 @@ body{
   .gallery img{
     width: 230px;
   }
-  #top_bar_label,.top_bar_icons{
+  #top_bar_label{
     font-size: 15px;
+  }
+  .top_bar_icons{
+    font-size: 12px;
   }
   
   .intro label:nth-of-type(2){
