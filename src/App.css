@@ -1,38 +1,265 @@
-.App {
-  text-align: center;
+.top_bar{
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 42px;
+  padding-right: 42px;  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro button{
+  padding: 24px 64px 24px 64px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#top_bar_label{
+  font-size: 20px;
+  font-weight: bold;
+}
+.top_bar_icons{
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: normal;
+}
+.intro label:nth-of-type(2){
+  font-size: 68px;
+}
+.profile{
+  flex-wrap: wrap;
+  padding-left: 42px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 42px;
+  gap: 48px;
+}
+.icons{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 68px;
+  padding-right: 68px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  flex-wrap: wrap;
+}
+.skill_item{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.skill_item label:nth-of-type(2){
+  font-size: 17px;
+}
+.skill_item label:nth-of-type(1){
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.skill_item img{
+  margin-bottom: 42px;
+}
+.gallery,.testimonial{
+  display: flex;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  flex-direction: column;
+}
+.gallery_row,.testimonial_row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.gallery_item,.testimonial_item{
+  display:flex;
+  flex-direction:column;
+}
+.gallery_item label{
+  align-self:start;
+} 
+.gallery_item img{
+  margin-bottom: 24px;
+}
+.gallery_item label:nth-of-type(1){
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.gallery_item label:nth-of-type(2){
+  font-size: 17px;
+
+}
+.testimonial_item{
+  padding: 42px;
+  background-color: #F3F3F3;
+}
+.testimonial_item label:nth-of-type(1){
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 68px;
+}
+.testimonial_user{
+  display: flex;
+  align-items: start;
+  gap: 16px;
+}
+.user_details img{
+  margin-bottom: 11px;
+}
+.user_details{
+  display: flex;
+  flex-direction: column;
+  
+}
+.user_details label:nth-of-type(1){
+  font-weight: bold;
+  font-size: 20px;
+  align-self: start;
+  margin-bottom: 0px;
+}
+.user_details label:nth-of-type(2){
+  font-size: 17px;
+  align-self: start;
+  margin-bottom: 0px;
+
+}
+.testimonial_item{
+  justify-content: center;
+}
+.contact_form{
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 42px;
+  padding-bottom: 86px;
+  display: flex;
+  gap: 42px;
+  flex-wrap: wrap;
+
+}
+.social_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  flex: 1;
+  max-width: 100%;
+}
+.inputs input{
+  background-color: #F3F3F3;
+  border: none;
+  font-size: 17px;
+  padding-left: 24px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+}
+.inputs{
+  flex: 1;
+}
+.inputs button{
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top:24px;
+  padding-bottom:24px;
+  background-color: black;
   color: white;
+  font-weight: bold;
+  font-size: 20px;
+  align-self: start;
 }
-
-.App-link {
-  color: #61dafb;
+.inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+img,button,.top_bar label{
+  cursor: pointer;
+}
+.social_icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+body{
+  font-family: 'Arial', sans-serif;
+}
+@media (max-width:500px)
+{
+  .gallery img{
+    width: 230px;
   }
-  to {
-    transform: rotate(360deg);
+  #top_bar_label,.top_bar_icons{
+    font-size: 15px;
+  }
+  
+  .intro label:nth-of-type(2){
+    font-size: 50px;
+  }
+  .intro button,.inputs button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .skills{
+    padding: 0px;
+  }
+  .skill_item{
+    padding: 24px;
+  }
+  .gallery{
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .testimonial,.contact_form{
+    padding-top: 0px;
+  }
+  .contact_form {
+    padding-bottom: 42px;
+  }
+  .user_details label{
+    font-size: 16px !important;
+  }
+  .profile img{
+    width: 200px !important;
+  }
+  .testimonial_item{
+    padding: 30px;
+  }
+}
+@media (max-width:700px)
+{
+  .profile img{
+    width: 300px;
   }
 }
