@@ -3,7 +3,8 @@
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 42px;
-  padding-right: 42px;  
+  padding-right: 42px;
+  align-items: center;  
 }
 .intro{
   display: flex;
